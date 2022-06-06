@@ -23,7 +23,7 @@ public class Member {
     private Address address;
 
 //    @JsonIgnore 엔티티에 화면에 뿌리기 위한 로직을 넣지 말자
-@JsonIgnore
+    @JsonIgnore
     @OneToMany(mappedBy = "member")
     private List<Order> orders = new ArrayList<>();
 
